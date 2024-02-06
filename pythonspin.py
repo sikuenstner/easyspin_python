@@ -157,5 +157,8 @@ def blochsteady(g,T1,T2,DeltaB0,B1,ModAmp,ModFreq,nPoints=0):
 
     return t,Mx,My,Mz
 
+def gamma(g=abs(constants.value(u'electron g factor'))):
+    return constants.value(u'Bohr magneton')/constants.hbar*g
+
 if __name__ == '__main__':
     main()
